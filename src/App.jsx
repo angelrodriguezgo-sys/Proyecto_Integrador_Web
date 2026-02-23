@@ -30,21 +30,27 @@ function App() {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
+
+
+
+
+
   return (
-    <div className="min-h-screen bg-gray-light">
+    <div className="Generel">
       {/* Header */}
-      <header className="bg-white shadow-md sticky top-0 z-50 px-4 sm:px-8 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-4">
+      <header className="header">
+        <div className="">
           {/* Logo izquierda */}
-          <div className="flex items-center gap-3">
-            <div className="bg-primary w-12 h-12 rounded-[16px_4px_16px_4px] flex items-center justify-center text-white text-2xl">
-              <FaCubes />
+          <div className="imagen-logo">
+           
+          <div>
+              <h1 className="text-2xl font-bold text-primary">COWORK</h1>
+              <span className="text-sm text-gray-medium">Espacios flexibles</span>
             </div>
-            <div>
-              <h1 className="text-2xl font-bold text-primary">CÔWORK</h1>
-              <span className="text-sm text-gray-medium">espacios flexibles</span>
-            </div>
-          </div>
+        </div>
+
+
+
 
           {/* Botones derecha */}
           <div className="flex items-center gap-2 flex-wrap">
@@ -200,16 +206,12 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white text-gray-medium py-8 text-center border-t border-gray-light">
-        <p>CÔWORK · espacios que conectan · 2025</p>
-        <p className="text-sm mt-2 flex items-center justify-center gap-2">
-          <FaCircle className="text-bright-blue text-xs" />
-          Inicio de sesión simulado (frontend)
-          <FaCircle className="text-bright-blue text-xs" />
-        </p>
+      <footer className="footer">
+        <p>COWORK · espacios que conectan · 2026</p>
+        <p>Desarollado con propositos educativos - Derechos Reservados</p>
       </footer>
     </div>
-  );
+  ); // Cierra el Return 
 }
 
 export default App;
