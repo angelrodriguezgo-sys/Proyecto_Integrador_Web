@@ -47,8 +47,8 @@ function App() {
         <div className="header-container"> {/* CONTIENE TODO EL CONTENIDO HEADER  */}
           {/* Logo */}
           <div className="logo">  {/* Espacio Izquierdo */}
-            <h1>NEXUS</h1>
-            <span>Espacios Flexibles</span>
+            <img  src="/public/imagenes/LogoSinfondo.png" alt="CartelNexus" className="logo-img" />
+           
           </div>
 
           {/* Botones de navegación */}  {/* Espacio derecho */}
@@ -144,7 +144,20 @@ function App() {
               <p>Somos una pagina web orientada a las pequeñas y microempresas, para ayudarlas a organizar sus equipos de trabajo
                 y a generar una mayor supervicion en el desarrollo de las tareas y analicis de desempeño, ayudandolos
                 a optener una mayor comunicacion y privacidad al momento de compartir su informacion entre si. </p>
-            
+                <br></br>
+              <p> Somos la mejor opcion al momento de creaer espacios cowork virtuales, ya que en este entorno podras hacer el seguimiento
+                a tus proyectos y compartirlos con tu equipo simplificando y maximisando el desarrollo de tus proyectos </p>
+                <br></br>
+              <p > <b> Pasos para creaer un Espacio Cowork </b></p>
+              <br></br>
+                <ol className='pasos-lista'>
+                  <li>Selecciona el plan que mas te convenga</li>
+                  <li>Ingresas como el Ceo </li>
+                  <li>Determinasa el Cargo y cuantas personas habran en ese Cargo (Tiene Limite segun tu Plan) </li>
+                  <li>llenas los datos de los directores y los directores llenaran los de los empleado</li>
+                  <li>Los ususarios ingresan a sus cuentas con el correo y contrasenas con el cual sus cuentas fueron creadas</li>
+                  <li>Listo, comienza a asignar trabajos y a desarrollarlos con tu equipo</li>
+                </ol>
             </div>
             
           
@@ -247,8 +260,8 @@ function App() {
 
       {/* ========== FOOTER ========== */}
       <footer className="footer">
-        <p>COWORK · espacios que conectan · 2026</p>
-        <p className="footer-small">Desarrollado con propósitos educativos - Derechos Reservados</p>
+        <p>COWORK · Espacios que conectan · 2026</p>
+        <p className="footer-small">Desarrollado con propósitos educativos - Derechos Reservados - @Copyright</p>
       </footer>
     </div>
  

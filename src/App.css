@@ -2,8 +2,8 @@
 
 :root {
   --primary: #1A2B3C;
-  --oil-blue: #2C3E50;
-  --bright-blue: #3498DB;
+  --oil-blue: #36618d;
+  --bright-blue: #4784ad;
   --gray-light: #ECF0F1;
   --gray-medium: #7F8C8D;
   --success: #27AE60;
@@ -22,7 +22,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-  background-color: var(--gray-light);
+  background-color: var( --bright-blue);
 }
 
 .app {
@@ -31,7 +31,7 @@ body {
 
 /* ===== HEADER ===== */
 .header {
-  background-color: var(--white);
+  background-color: var(--gray-light);
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
@@ -39,7 +39,7 @@ body {
 }
 
 .header-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 15px 20px;
   display: flex;
@@ -50,15 +50,15 @@ body {
 }
 
 /* Logo */
-.logo h1 {
-  color: var(--primary);
-  font-size: 24px;
-  margin: 0;
+.logo-img{
+  width: 250px;
+  height: 65px;
 }
 
 .logo span {
   color: var(--gray-medium);
   font-size: 14px;
+  direction: inherit;
 }
 
 /* Botones de navegación */
@@ -162,7 +162,7 @@ body {
 }
 
 .modal-title {
-  color: var(--primary);
+  color: var(--white);
   margin-top: 0;
   margin-bottom: 20px;
   display: flex;
@@ -265,17 +265,19 @@ body {
   margin: 0 auto;
   padding: 50px 20px;
 }
-
+.pasos-lista{
+  text-align: left;
+}
 .section {
   margin-bottom: 80px;
   scroll-margin-top: 80px;
 }
 
 .section-title {
-  color: var(--primary);
+  color: var(--white);
   font-size: 36px;
   font-weight: 300;
-  border-left: 8px solid var(--bright-blue);
+  border-left: 8px solid var(--primary);
   padding-left: 20px;
   margin-bottom: 40px;
 }
@@ -329,7 +331,7 @@ body {
 .highlight-text {
   text-align: center;
   font-size: 20px;
-  color: var(--oil-blue);
+  color: var(--white);
   max-width: 800px;
   margin: 0 auto;
 }
