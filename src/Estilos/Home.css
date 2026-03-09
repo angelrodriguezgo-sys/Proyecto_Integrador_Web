@@ -1,0 +1,311 @@
+:root {
+                    --primary: #1A2B3C;
+                    --secondary: #3498DB;
+                    --accent: #E74C3C;
+                    --light: #ECF0F1;
+                    --dark: #2C3E50;
+                    --success: #27AE60;
+                }
+
+                /* Estilos generales de secciones */
+                .section {
+                    padding: 80px 20px;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+
+                .section-title {
+                    font-size: 2.5em;
+                    color: var(--primary);
+                    text-align: center;
+                    margin-bottom: 50px;
+                    position: relative;
+                    padding-bottom: 20px;
+                }
+
+                .section-title::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 4px;
+                    background: var(--secondary);
+                    border-radius: 2px;
+                }
+
+                /* QUIÉNES SOMOS */
+                .card.service-card {
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    padding: 50px;
+                    border-radius: 30px;
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+                }
+
+                .quienes-somos-content {
+                    text-align: center;
+                }
+
+                .section-icon {
+                    font-size: 60px;
+                    margin-bottom: 30px;
+                    color: white;
+                }
+
+                .quienes-somos-texto {
+                    font-size: 1.1em;
+                    line-height: 1.8;
+                    margin-bottom: 20px;
+                    color: rgba(255,255,255,0.95);
+                }
+
+                .servicios-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 30px;
+                    margin-top: 60px;
+                }
+
+                .servicio-item {
+                    background: white;
+                    padding: 30px;
+                    border-radius: 20px;
+                    text-align: center;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+                    transition: transform 0.3s;
+                }
+
+                .servicio-item:hover {
+                    transform: translateY(-10px);
+                }
+
+                .servicio-icon {
+                    font-size: 40px;
+                    color: var(--secondary);
+                    margin-bottom: 20px;
+                }
+
+                .servicio-item h3 {
+                    color: var(--primary);
+                    margin-bottom: 10px;
+                    font-size: 1.2em;
+                }
+
+                .servicio-item p {
+                    color: #666;
+                    font-size: 0.95em;
+                }
+
+                /* VISIÓN */
+                .vision-section {
+                    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                    border-radius: 50px;
+                }
+
+                .vision-container {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+
+                .vision-content {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 40px;
+                    background: white;
+                    padding: 40px;
+                    border-radius: 30px;
+                    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+                }
+
+                .vision-icon {
+                    font-size: 80px;
+                    color: var(--secondary);
+                    flex-shrink: 0;
+                }
+
+                .vision-texto p {
+                    font-size: 1.1em;
+                    line-height: 1.8;
+                    color: #555;
+                    margin-bottom: 20px;
+                }
+
+                .vision-destacado {
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    padding: 20px;
+                    border-radius: 15px;
+                    font-weight: 500;
+                }
+
+                .vision-stats {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 30px;
+                    margin-top: 50px;
+                }
+
+                .stat-item {
+                    text-align: center;
+                    background: white;
+                    padding: 25px;
+                    border-radius: 20px;
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+                }
+
+                .stat-numero {
+                    display: block;
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    color: var(--secondary);
+                    margin-bottom: 10px;
+                }
+
+                .stat-label {
+                    color: #666;
+                    font-size: 0.9em;
+                }
+
+                /* MISIÓN */
+                .mision-section {
+                    background: white;
+                }
+
+                .mision-container {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+
+                .mision-content {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 40px;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    padding: 50px;
+                    border-radius: 30px;
+                    box-shadow: 0 20px 40px rgba(102,126,234,0.3);
+                }
+
+                .mision-icon {
+                    font-size: 80px;
+                    color: white;
+                    flex-shrink: 0;
+                }
+
+                .mision-texto {
+                    color: white;
+                }
+
+                .mision-texto p {
+                    font-size: 1.1em;
+                    line-height: 1.8;
+                    margin-bottom: 20px;
+                    color: rgba(255,255,255,0.95);
+                }
+
+                .mision-lista {
+                    list-style: none;
+                    padding: 0;
+                    margin: 25px 0;
+                }
+
+                .mision-lista li {
+                    margin-bottom: 15px;
+                    font-size: 1.05em;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                .mision-compromiso {
+                    background: rgba(255,255,255,0.1);
+                    padding: 20px;
+                    border-radius: 15px;
+                    font-style: italic;
+                    border-left: 4px solid white;
+                }
+
+                /* CTA */
+                .cta-container {
+                    text-align: center;
+                    padding: 60px 20px;
+                    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                    border-radius: 50px;
+                    margin: 40px 20px;
+                }
+
+                .highlight-text {
+                    font-size: 1.5em;
+                    color: var(--primary);
+                    margin-bottom: 30px;
+                }
+
+                .badge {
+                    background: var(--success);
+                    color: white;
+                    padding: 8px 20px;
+                    border-radius: 50px;
+                    margin-left: 15px;
+                    font-size: 0.8em;
+                    display: inline-block;
+                }
+
+                .cta-button {
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    border: none;
+                    padding: 15px 40px;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    box-shadow: 0 10px 20px rgba(102,126,234,0.3);
+                }
+
+                .cta-button:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 15px 30px rgba(102,126,234,0.4);
+                }
+
+                /* Responsive */
+                @media (max-width: 768px) {
+                    .section {
+                        padding: 50px 20px;
+                    }
+
+                    .section-title {
+                        font-size: 2em;
+                    }
+
+                    .servicios-grid {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .vision-content {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+
+                    .vision-stats {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .mision-content {
+                        flex-direction: column;
+                        text-align: center;
+                        padding: 30px;
+                    }
+
+                    .mision-lista li {
+                        text-align: left;
+                    }
+
+                    .badge {
+                        display: block;
+                        margin: 10px auto 0;
+                        width: fit-content;
+                    }
+                }
