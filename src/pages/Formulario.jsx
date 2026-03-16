@@ -76,7 +76,7 @@ function Formulario() {
         telefono: "",
         terminos: false,
       });
-      navigate("/registro");
+      navigate("");
 
     }
   };

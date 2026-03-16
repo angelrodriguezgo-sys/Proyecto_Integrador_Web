@@ -1,4 +1,6 @@
 
+import "/src/App.css";
+
 
 function Footer() {
     return(

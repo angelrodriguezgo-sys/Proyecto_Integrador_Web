@@ -17,7 +17,7 @@ function Precio(){
                     Capacidad de 5 a 10 Usuarios
                 </p>
                   <button className="plan-btn" >  
-                      <Link to="/formulario" >$120.000 * Mes</Link> 
+                      <Link to="/registro" >$120.000 * Mes</Link> 
                   </button>
               </div>
             
@@ -30,7 +30,7 @@ function Precio(){
                 Capacidad de 10 a 50 Usuarios
               </p>
               <button className="plan-btn">   
-                 <Link to="/formulario">$240.000 * Mes</Link>
+                 <Link to="/registro">$240.000 * Mes</Link>
               </button>
             </div>
             
@@ -43,7 +43,7 @@ function Precio(){
                 Capacidad de 50 a 200 Usuarios
               </p>
               <button className="plan-btn"> 
-                Consultar
+                  <Link to="/CeoPage">Consultar</Link>
               </button>
             </div>
           </div>

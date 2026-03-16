@@ -5,31 +5,30 @@ import'/src/Estilos/Home.css';
 function Home(){
   return(
     <div>
-      <section id="nosotros" className="section">
-        <h2 className="section-title">Sobre nosotros</h2>
-          <div className="cards-container">
-            <div className="card service-card">
-              <div className="quienes-somos-content">
-                <FaUsers className="section-icon" />
-                <p className="quienes-somos-texto">
-                    Somos una plataforma web innovadora diseñada especialmente para pequeñas y microempresas 
-                    que buscan organizar sus equipos de trabajo de manera eficiente. Nuestra solución permite 
-                    una supervisión detallada en el desarrollo de tareas y un análisis preciso del desempeño laboral.
-                </p>
-                <p className="quienes-somos-texto">
-                  Facilitamos la comunicación y privacidad entre los miembros del equipo al momento de compartir 
-                  información sensible y documentos importantes. Nos especializamos en crear espacios cowork virtuales 
-                  donde puedes realizar seguimiento en tiempo real de tus proyectos y colaborar con tu equipo 
-                  maximizando el potencial de cada miembro.
-                </p>
-              </div>
+        <section id="nosotros" className="section">
+            <h2 className="section-title"> Nosotros </h2>
+            <div className="cards-container">
+                <div className="card service-card">
+                <div className="quienes-somos-content">
+                    <FaUsers className="section-icon" />
+                    <p className="quienes-somos-texto">
+                        Somos una plataforma web innovadora diseñada especialmente para pequeñas y microempresas 
+                        que buscan organizar sus equipos de trabajo de manera eficiente. Nuestra solución permite 
+                        una supervisión detallada en el desarrollo de tareas y un análisis preciso del desempeño laboral.
+                    </p>
+                    <p className="quienes-somos-texto">
+                    Facilitamos la comunicación y privacidad entre los miembros del equipo al momento de compartir 
+                    información sensible y documentos importantes. Nos especializamos en crear espacios cowork virtuales 
+                    donde puedes realizar seguimiento en tiempo real de tus proyectos y colaborar con tu equipo 
+                    maximizando el potencial de cada miembro.
+                    </p>
+                </div>
+                </div>
             </div>
-          </div>
 
-                {/* Tarjetas de servicios */}
+            {/* Tarjetas de servicios */}
                 <div className="servicios-grid">
                     <div className="servicio-item">
-                    
                         <FaRocket className="servicio-icon" />
                         <h3>Organización Eficiente</h3>
                         <p>Gestiona equipos y tareas de forma intuitiva</p>
@@ -45,7 +44,7 @@ function Home(){
                         <p>Monitorea el progreso de tus proyectos</p>
                     </div>
                 </div>
-            </section>
+        </section>
 
             {/* SECCIÓN VISIÓN */}
             <section id="vision" className="section vision-section">
@@ -84,6 +83,7 @@ function Home(){
                         </div>
                     </div>
                 </div>
+
             </section>
 
             {/* SECCIÓN MISIÓN */}
@@ -123,8 +123,9 @@ function Home(){
                     <span className="badge">+500 miembros activos</span>
                 </p>
             </div>
-        </div>
-    );
+    </div>
+); 
 }
+
 
 export default Home;
