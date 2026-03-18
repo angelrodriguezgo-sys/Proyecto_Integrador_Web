@@ -39,116 +39,87 @@ Empleado	 Personal operativo	               Visualización y respuesta de tareas
 3. ARQUITECTURA INTERNA ENTRE CARPETAS Y CONTENIDO (FUNCIONALIDADES)
 
 nexus-project/
-├── public/
-│   ├
-│   └── imagenes/
-│       ├── logo.png
-│       └── fondos/
+|--- public/
+|    |-- imagenes/
+|    |--  logo.png
+|    |-- fondos/
 │
-├── src/
-│   ├── assets/
-│   │   ├── css/
-│   │   │   ├── variables.css
-│   │   │   └── global.css
-│   │   └── imagenes/
-│   │
-│   ├── components/
-│   │   ├── comunes/
-│   │   │   ├── Header.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   ├── Tarjeta.jsx
-│   │   │   └── Modal.jsx
-│   │   ├── formularios/
-│   │   │   ├── LoginForm.jsx
-│   │   │   └── RegistroForm.jsx
-│   │   └── layout/
-│   │       ├── LayoutPublico.jsx
-│   │       └── LayoutPrivado.jsx
-│   │
-│   ├── pages/
-│   │   ├── publicas/
-│   │   │   ├── LandingPage.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── Registro.jsx
-│   │   │   └── Precios.jsx
-│   │   ├── admin/
-│   │   │   ├── DashboardAdmin.jsx
-│   │   │   └── GestionUsuarios.jsx
-│   │   ├── director/
-│   │   │   └── DashboardDirector.jsx
-│   │   ├── lider/
-│   │   │   └── DashboardLider.jsx
-│   │   └── empleado/
-│   │       └── DashboardEmpleado.jsx
-│   │
-│   ├── contexts/
-│   │   ├── AuthContext.jsx
-│   │   ├── EmpresaContext.jsx
-│   │   └── PlanContext.jsx
-│   │
-│   ├── hooks/
-│   │   ├── useAuth.js
-│   │   ├── useRoles.js
-│   │   └── useEmpresa.js
-│   │
-│   ├── services/
-│   │   ├── authService.js
-│   │   ├── usuarioService.js
-│   │   ├── tareaService.js
-│   │   └── firebaseConfig.js
-│   │
-│   ├── utils/
-│   │   ├── validaciones.js
-│   │   ├── permisos.js
-│   │   └── formatos.js
-│   │
-│   ├── data/
-│   │   └── planes.js
-│   │
-│   ├── routes/
-│   │   └── AppRouter.jsx
-│   │
-│   ├── App.jsx
-│   ├── App.css
-│   ├── main.jsx
-│   └── index.css
-│
-├── .gitignore
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
+|-- src/
+|   |--- assets/
+|   |   |-- css/
+|   |  |   |-- variables.css
+|   |   |   |-- global.css
+|   |   |--- imagenes/
+|   |
+|   |-- components/
+|   |   |-- comunes/
+|   |   |   |-- Header.jsx
+|   |   |   |-- Footer.jsx
+|   |   |   |-- Sidebar.jsx
+|   |   |   |-- Tarjeta.jsx
+|   |   |   |-- Modal.jsx
+|   |   |-- formularios/
+|   |   |   |-- LoginForm.jsx
+|   |   |   |-- RegistroForm.jsx
+|   |   |-- layout/
+|   |       |-- LayoutPublico.jsx
+|   |       |-- LayoutPrivado.jsx
+|   |
+|   |-- pages/
+|   |   |-- publicas/
+|   |   |   |-- LandingPage.jsx
+|   |   |   |-- Login.jsx
+|   |   |   |-- Registro.jsx
+|   |   |   |-- Precios.jsx
+|   |   |-- admin/
+|   |   |   |-- DashboardAdmin.jsx
+|   |   |   |-- GestionUsuarios.jsx
+|   |   |-- director/
+|   |   |   |-- DashboardDirector.jsx
+|   |   |-- lider/
+|   |   |   |-- DashboardLider.jsx
+|   |   |-- empleado/
+|   |       |-- DashboardEmpleado.jsx
+|   |
+|   |-- contexts/
+|   |   vAuthContext.jsx
+|   |   |--EmpresaContext.jsx
+|   |   |-- PlanContext.jsx
+|   |
+|   |--hooks/
+|   |   |-- useAuth.js
+|   |   |-- useRoles.js
+|   |   |-- useEmpresa.js
+|   |
+|   |-- services/
+|   |   |-- authService.js
+|   |   |-- usuarioService.js
+|   |   |-- tareaService.js
+|   |   |-- firebaseConfig.js
+|   |
+|   |-- utils/
+|   |   |-- validaciones.js
+|   |   |--permisos.js
+|   |   |-- formatos.js
+|   |
+|   |--data/
+|   |   |-- planes.js
+|   |
+|   |-- routes/
+|   |   |-- AppRouter.jsx
+|   |
+|   |-- App.jsx
+|   |-- App.css
+|   |-- main.jsx
+|   |--index.css
+|
+|-- .gitignore
+|-- index.html
+|-- package.json
+|-- vite.config.js
+|-- README.md
 
-ESTRUCTURA SQL - BASICO 
 
-┌─────────────┐       ┌─────────────┐       ┌─────────────┐
-│  EMPRESAS   │       │   PLANES    │       │   USUARIOS  │
-├─────────────┤       ├─────────────┤       ├─────────────┤
-│ PK: id      │       │ PK: id      │       │ PK: id      │
-│ nit         │       │ nombre      │       │ empresaId   │──┐
-│ nombre      │       │ precio      │       │ nombre      │  │
-│ planId      │──────▶│ maxUsuarios │       │ email       │  │
-│ estado      │       │ descripcion │       │ rol         │  │
-│ fechaCrea   │       └─────────────┘       │ superiorId  │──┘
-└─────────────┘                              │ activo      │
-        │                                    └─────────────┘
-        │                                           │
-        │                                           │
-        ▼                                           ▼
-┌─────────────┐       ┌─────────────┐       ┌─────────────┐
-│   EQUIPOS   │       │   TAREAS    │       │  ARCHIVOS   │
-├─────────────┤       ├─────────────┤       ├─────────────┤
-│ PK: id      │       │ PK: id      │       │ PK: id      │
-│ empresaId   │──────▶│ empresaId   │       │ tareaId     │
-│ nombre      │       │ titulo      │       │ usuarioId   │
-│ liderId     │──────▶│ asignadoA[] │       │ nombre      │
-│ miembros[]  │       │ creadorId   │       │ url         │
-│ activo      │       │ estado      │       │ fechaSubida │
-└─────────────┘       │ fechaLimite │       └─────────────┘
-                      │ prioridad   │
-                      │ comentarios[]│
-                      └─────────────┘
 
 ESTRUCTURA DE LA "CAJA" 
 
