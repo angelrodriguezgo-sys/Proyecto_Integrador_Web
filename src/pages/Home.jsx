@@ -61,10 +61,10 @@ function Home(){
                                 potencian el talento humano. Aspiramos a crear un ecosistema digital donde la colaboración 
                                 fluya sin barreras y el éxito empresarial sea accesible para todos.
                             </p>
-                            <p className="vision-destacado">
+                            <div className="vision-destacado" >
                                 Para el 2028, esperamos impactar a más de 10,000 empresas y facilitar la creación de 
                                 espacios de trabajo colaborativo que impulsen la productividad y el crecimiento sostenible.
-                            </p>
+                            </div>
                         </div>
                     </div>
                     

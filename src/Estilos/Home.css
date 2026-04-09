@@ -111,15 +111,15 @@
 
                 .vision-texto p {
                     font-size: 1.1em;
-                    line-height: 1.8;
+                    line-height: 2.1;
                     color: #555;
                     margin-bottom: 20px;
                 }
 
                 .vision-destacado {
-                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                     color: white;
-                    padding: 20px;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    padding: 27px;
                     border-radius: 15px;
                     font-weight: 500;
                 }
@@ -154,7 +154,7 @@
 
                 /* MISIÓN */
                 .mision-section {
-                    background: #3498DB;
+                    background: linear-gradient(135deg, #daa7dc 0%, #65b9f1 100%);
                     margin: 40px 160px ;
                     border-radius: 50px;
                 }

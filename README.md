@@ -8,20 +8,20 @@ Frase / Eslogan: "NEXUS: Donde el caos empresarial se convierte en estructura, y
 NEXUS es una plataforma web de gestión organizacional diseñada específicamente para pequeñas y microempresas que necesitan organizar sus equipos de trabajo de manera eficiente y estructurada.
 
 Características principales:
-    - Estructura piramidal: Jefe → Director → Líder → Empleado
+    Estructura piramidal: Jefe → Director → Líder → Empleado
 
-    - Espacios privados por equipo y nivel jerárquico
+    Espacios privados por equipo y nivel jerárquico
 
-    - Sistema de tareas con asignación, seguimiento y archivos adjuntos
+     Sistema de tareas con asignación, seguimiento y archivos adjuntos
 
-    - Comunicación interna similar a un correo electrónico pero organizada por equipos y proyectos
+     Comunicación interna similar a un correo electrónico pero organizada por equipos y proyectos
 
-    - Gestión de archivos por tarea y por equipo
+     Gestión de archivos por tarea y por equipo
 
-    - Planes escalables:
-            - Microempresa (5-10 usuarios)
-            - Pequeña Empresa (10-50 usuarios)
-            - Mediana Empresa (50-200 usuarios)
+     Planes escalables:
+            Microempresa (5-10 usuarios)
+            Pequeña Empresa (10-50 usuarios)
+            Mediana Empresa (50-200 usuarios)
 
 
 Tecnologías utilizadas:
