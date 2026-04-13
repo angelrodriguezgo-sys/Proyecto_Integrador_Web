@@ -8,6 +8,7 @@ import Formulario from './pages/Formulario';
 import Registro from './components/Registro';
 import CeoPage from './users/Ceo/CeoPage';
 import Footer from './components/Footer';
+import PanelAdmin  from './pages/PanelAdmin';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/formulario' element={<Formulario/>}/>
             <Route path="/registro" element={<Registro/>} />
             <Route path='/CeoPage' element={  <CeoPage/> } />
+            <Route path='/PanelAdmin' element={<PanelAdmin/>} /> 
         </Routes>
         <Footer/>
     </> 

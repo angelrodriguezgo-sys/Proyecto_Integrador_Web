@@ -6,6 +6,8 @@ import {
 } from 'react-icons/fa';
 
 import "/src/Estilos/Ceo.css";
+import { Link } from 'react-router-dom';
+import { FaPerson } from 'react-icons/fa6';
 
 function DashboardEmpresa() {
   const [fechaActual, setFechaActual] = useState(new Date());
@@ -100,6 +102,12 @@ function DashboardEmpresa() {
             </div>
           </div>
         );
+      case 'PanelAdmin':
+        return (
+          <div className="seccion-contenido">
+            <Link to="/PanelAdmin" className="boton-panel-admin">Ir a Panel Admin</Link> 
+          </div>
+        ); 
       default:
         return null;
     }
@@ -155,6 +163,14 @@ function DashboardEmpresa() {
             >
               <FaUsers className="nav-icon" />
               <span>Empleados</span>
+            </button>
+
+            <button 
+              className={`nav-item ${seccionActiva === 'PanelAdmin' ? 'activo' : ''}`}
+              onClick={() => setSeccionActiva('PanelAdmin')}
+            >
+              <FaPerson className="nav-icon" />
+              <span>Panel Administracion</span>
             </button>
 
             <div className="nav-divider"></div>
