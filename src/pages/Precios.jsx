@@ -30,7 +30,7 @@ function Precio(){
                 Capacidad de 10 a 50 Usuarios
               </p>
               <button className="plan-btn">   
-                 <Link to="/registro">$240.000 * Mes</Link>
+               <Link to="/registro">$240.000 * Mes</Link> 
               </button>
             </div>
             
