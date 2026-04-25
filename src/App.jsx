@@ -9,6 +9,8 @@ import Registro from './components/Registro';
 import CeoPage from './users/Ceo/CeoPage';
 import Footer from './components/Footer';
 import PanelAdmin  from './pages/PanelAdmin';
+import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
             <Route path="/registro" element={<Registro/>} />
             <Route path='/CeoPage' element={  <CeoPage/> } />
             <Route path='/PanelAdmin' element={<PanelAdmin/>} /> 
+            <Route path='/login' element={<Login/>} />
+            <Route path='/register' element={<Register/>} />
         </Routes>
         <Footer/>
     </> 
