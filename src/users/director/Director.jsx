@@ -105,7 +105,7 @@ function DashboardEmpresa() {
       case 'PanelAdmin':
         return (
           <div className="seccion-contenido">
-            <Link to="/PanelAdmin" className="boton-panel-admin">Panel de Administracion</Link>  {/* agregar apertura de nueva pagina */}
+            <Link to="/PanelAdmin" className="boton-panel-admin">Ir a Panel Admin</Link> 
           </div>
         ); 
       default:
@@ -141,13 +141,6 @@ function DashboardEmpresa() {
         {/* Barra lateral izquierda - Navegación */}
         <aside className="sidebar-left">
           <nav className="nav-menu">
-            <button 
-              className={`nav-item ${seccionActiva === 'directores' ? 'activo' : ''}`}
-              onClick={() => setSeccionActiva('directores')}
-            >
-              <FaUserTie className="nav-icon" />
-              <span>Directores</span>
-            </button>
             
             <button 
               className={`nav-item ${seccionActiva === 'lideres' ? 'activo' : ''}`}
@@ -170,7 +163,7 @@ function DashboardEmpresa() {
               onClick={() => setSeccionActiva('PanelAdmin')}
             >
               <FaPerson className="nav-icon" />
-              <span>Panel Administrador</span>
+              <span>Panel Administracion</span>
             </button>
 
             <div className="nav-divider"></div>

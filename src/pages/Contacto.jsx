@@ -1,12 +1,12 @@
-"/src/Estilos/Contacto.css";
+import "../Estilos/Contacto.css";
 
 function Contacto(){
 
     return(
-      <div>
-  <section id="contacto" className="section">
-    <h2 className="section-title">Contáctenos</h2>
-    
+    <div className="contacto-section">
+    <section id="contacto" >
+      <h2 className="section-title">Contáctenos</h2>
+      
     <div className="cards-container">
     
       <div className="card contact-card">

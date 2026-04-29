@@ -1,5 +1,5 @@
 
-import "/src/App.css";
+import "../Estilos/Footer.css";
 
 
 function Footer() {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Link, useNavigate } from 'react-router-dom';
+import '../Estilos/Register.css';
 
 function Register() {
   const [email, setEmail] = useState('');
@@ -33,34 +34,44 @@ function Register() {
   };
 
   return (
-    <div>
-      <h2>Registro</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="register-container">
+       <div className="register-card">
+        <h2 className="register-title" >Registro</h2>
+        <p className="register-subtitle">Completa tus datos para registrarte</p>
+
+        <form className="register-form" onSubmit={handleSubmit}>
         <input
+          className="register-input"
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <input
+        
+        <input  className="register-input"
           type="password"
           placeholder="Contraseña"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <input
+
+        <input  className="register-input"
           type="password"
           placeholder="Confirmar Contraseña"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
         />
-        <button type="submit">Registrarse</button>
+
+        <button className="register-btn" type="submit">Registrarse</button>
+
         {error && <p style={{ color: 'red' }}>{error}</p>}
-      </form>
-      <p>¿Ya tienes cuenta? <Link to="/login">Inicia sesión</Link></p>
+
+        </form>
+        <p>¿Ya tienes cuenta? <Link to="/login">Inicia sesión</Link></p>
+      </div>
     </div>
   );
 }

@@ -1,13 +1,13 @@
 import { Link} from "react-router-dom";
-
+import "../Estilos/Precios.css";
 
 function Precio(){
 
     
     return(
-      <div>
-        <section id="planes" className="section">
-          <h2 className="section-title">Planes</h2>
+      <div className="precios-section">
+        <section id="planes" >
+          <h2 className="section-title">Paquetes de Planes</h2>
 
             <div className="cards-container">
                 {/* Plan Microempresa */}
@@ -16,8 +16,8 @@ function Precio(){
                 <p className="plan-description">
                     Capacidad de 5 a 10 Usuarios
                 </p>
-                  <button className="plan-btn" >  
-                      <Link to="/registro" >$120.000 * Mes</Link> 
+                  <button className="plan-btn">  
+                      <Link to="/registro"  >$120.000 * Mes</Link> 
                   </button>
               </div>
             

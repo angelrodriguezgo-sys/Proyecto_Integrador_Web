@@ -6,7 +6,7 @@ import Precio from './pages/Precios';
 import Contacto from './pages/Contacto';
 import Formulario from './pages/Formulario';
 import Registro from './components/Registro';
-import CeoPage from './users/Ceo/CeoPage';
+import CeoPage from './users/ceo/CeoPage';
 import Footer from './components/Footer';
 import PanelAdmin  from './pages/PanelAdmin';
 import Login from './components/Login';
@@ -22,7 +22,7 @@ function App() {
             <Route path='/precios' element={<Precio/> }/>
             <Route path='/contacto' element={<Contacto/>}/>
             <Route path='/formulario' element={<Formulario/>}/>
-            <Route path="/registro" element={<Registro/>} />
+            <Route path="/registro" element={<Registro/>} /> {/* Registrar empresa */}
             <Route path='/CeoPage' element={  <CeoPage/> } />
             <Route path='/PanelAdmin' element={<PanelAdmin/>} /> 
             <Route path='/login' element={<Login/>} />

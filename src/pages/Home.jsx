@@ -1,26 +1,26 @@
 import { FaBullseye, FaChartLine, FaEye, FaHandshake, FaRocket, FaUsers } from 'react-icons/fa';
-import'/src/Estilos/Home.css';
+import'../Estilos/Home.css';
 
 
 function Home(){
   return(
-    <div>
-        <section id="nosotros" className="section">
+    <div className="home-section">
+        <section id="nosotros">
             <h2 className="section-title"> Nosotros </h2>
             <div className="cards-container">
                 <div className="card service-card">
                 <div className="quienes-somos-content">
-                    <FaUsers className="section-icon" />
+                    <FaUsers className="section-icon" /> 
                     <p className="quienes-somos-texto">
                         Somos una plataforma web innovadora diseñada especialmente para pequeñas y microempresas 
                         que buscan organizar sus equipos de trabajo de manera eficiente. Nuestra solución permite 
                         una supervisión detallada en el desarrollo de tareas y un análisis preciso del desempeño laboral.
                     </p>
                     <p className="quienes-somos-texto">
-                    Facilitamos la comunicación y privacidad entre los miembros del equipo al momento de compartir 
-                    información sensible y documentos importantes. Nos especializamos en crear espacios cowork virtuales 
-                    donde puedes realizar seguimiento en tiempo real de tus proyectos y colaborar con tu equipo 
-                    maximizando el potencial de cada miembro.
+                        Facilitamos la comunicación y privacidad entre los miembros del equipo al momento de compartir 
+                        información sensible y documentos importantes. Nos especializamos en crear espacios cowork virtuales 
+                        donde puedes realizar seguimiento en tiempo real de tus proyectos y colaborar con tu equipo 
+                        maximizando el potencial de cada miembro.
                     </p>
                 </div>
                 </div>
@@ -119,7 +119,7 @@ function Home(){
             {/* CTA Final */}
             <div className="cta-container">
                 <p className="highlight-text">
-                    Espacios colaborativos para maximizar TU emprendimiento
+                    Espacios colaborativos para maximizar TU emprendimiento.
                     <span className="badge">+500 miembros activos</span>
                 </p>
             </div>
