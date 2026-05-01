@@ -130,7 +130,9 @@ function DashboardEmpresa() {
         </div>
         
         <div className="header-right">
-          <FaBell className="header-icon notificacion" />
+          <Link to="/chat-empresarial" className="header-icon-link notificacion-link">
+                <FaBell className="header-icon notificacion" />
+          </Link>
           <FaSearch className="header-icon busqueda" />
           <FaUserCircle className="header-icon perfil" />
         </div>

@@ -47,7 +47,7 @@ function PanelAdmin() {
     const nuevoTrabajador = { id: Date.now(), ...formData };
     setTrabajadores([...trabajadores, nuevoTrabajador]);
     handleLimpiar();
-    alert('✅ ¡Trabajador agregado exitosamente!');
+    alert(' ¡Trabajador agregado exitosamente!');
   };
 
   const handleActualizar = (e) => {
@@ -60,7 +60,7 @@ function PanelAdmin() {
       t.id === editingId ? { ...t, ...formData } : t
     ));
     handleLimpiar();
-    alert('✅ ¡Trabajador actualizado exitosamente!');
+    alert(' ¡Trabajador actualizado exitosamente!');
   };
 
   const handleEliminar = (e) => {
@@ -72,7 +72,7 @@ function PanelAdmin() {
     if (window.confirm('¿Estás seguro de que deseas eliminar este trabajador?')) {
       setTrabajadores(trabajadores.filter(t => t.id !== editingId));
       handleLimpiar();
-      alert('✅ ¡Trabajador eliminado exitosamente!');
+      alert(' ¡Trabajador eliminado exitosamente!');
     }
   };
 
@@ -105,7 +105,7 @@ function PanelAdmin() {
     <div className="panel-admin-container">
       {/* ===== HEADER ===== */}
       <div className="panel-header">
-        <h1>👨‍💼 Panel de Administración de Trabajadores</h1>
+        <h1>👨‍💼 Panel de Administración de Empleadoss</h1>
         <p>Gestión completa de empleados y personal</p>
       </div>
 
@@ -130,7 +130,7 @@ function PanelAdmin() {
         {/* ===== FORMULARIO ===== */}
         <div className="panel-form-section">
           <div className="form-header">
-            <h2>{editingId ? '✏️ Editar Trabajador' : '➕ Nuevo Trabajador'}</h2>
+            <h2>{editingId ? ' Editar Trabajador' : ' Nuevo Trabajador'}</h2>
           </div>
           <form onSubmit={(e) => e.preventDefault()}>
             <div className="form-group">
@@ -151,19 +151,19 @@ function PanelAdmin() {
 
             <div className="form-row">
               <div className="form-group">
-                <label>Cargo *</label>
-                <input type="text" name="cargo" placeholder="Ej: Gerente, Coordinador" value={formData.cargo} onChange={handleInputChange} required />
+                <label>Cargo Empleado *</label>
+                <input type="text" name="cargo" placeholder="Ej: Coordinador ..." value={formData.cargo} onChange={handleInputChange} required />
               </div>
               <div className="form-group">
                 <label>Departamento *</label>
                 <select name="departamento" value={formData.departamento} onChange={handleInputChange} required>
                   <option value="">-- Selecciona departamento --</option>
                   <option>Administración</option>
-                  <option>Operaciones</option>
                   <option>Recursos Humanos</option>
                   <option>Ventas</option>
                   <option>Marketing</option>
                   <option>Finanzas</option>
+                  <option>Operaciones</option>
                 </select>
               </div>
             </div>
@@ -173,9 +173,9 @@ function PanelAdmin() {
                 <label>Rol de Sistema</label>
                 <select name="rol" value={formData.rol} onChange={handleInputChange}>
                   <option>Admin</option>
-                  <option>Gestor</option>
-                  <option>Operador</option>
-                  <option>Viewer</option>
+                  <option>T.I</option>
+                  <option>R.R.H.H</option>
+                  <option>Empleado</option>
                 </select>
               </div>
               <div className="form-group">
@@ -219,7 +219,7 @@ function PanelAdmin() {
             <h2>📋 Listado de Trabajadores</h2>
             <input
               type="text"
-              placeholder="🔍 Buscar nombre, email, cargo, departamento..."
+              placeholder="🔍 Buscar nombre, email ..."
               className="search-input"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}

@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import PanelAdmin  from './pages/PanelAdmin';
 import Login from './components/Login';
 import Register from './components/Register';
+import ChatEmpresarial from './pages/ChatEmpresarial';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             <Route path='/PanelAdmin' element={<PanelAdmin/>} /> 
             <Route path='/login' element={<Login/>} />
             <Route path='/register' element={<Register/>} />
+            <Route path='/chat-empresarial' element={<ChatEmpresarial />} /> {/* Nueva ruta para el chat empresarial */}
         </Routes>
         <Footer/>
     </> 
